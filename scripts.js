@@ -130,3 +130,10 @@ $overlay.hover(
         $links.addClass('visuallyHidden');
     }
 );
+
+$overlay.on('click', function() {
+    $title.classList.toggle('visuallyHidden');
+    $usedSkills.classList.toggle('visuallyHidden');
+    $projectDescription.classList.toggle('visuallyHidden');
+    $links.classList.toggle('visuallyHidden');
+})

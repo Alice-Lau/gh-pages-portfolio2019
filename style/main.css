@@ -656,8 +656,7 @@ h1 {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-  .stickyNavLink a:hover,
-  .stickyNavLink a:focus {
+  .stickyNavLink a:hover {
     border-bottom: 2px solid #2d2d2d; }
 
 .change.stickyNavLink {
