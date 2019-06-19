@@ -582,7 +582,7 @@ h1 {
 
 .stickyNav {
   width: 5%;
-  position: fixed;
+  position: absolute;
   top: 1%;
   right: 1%;
   z-index: 9; }
