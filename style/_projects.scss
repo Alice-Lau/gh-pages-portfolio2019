@@ -1,0 +1,150 @@
+.project {
+    min-height: 100vh;
+    display: flex;
+}
+
+.projectTitle {
+    background: #F2EAE7;
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+
+    h2 {
+        width: 100%;
+        margin-bottom: 8%;
+        padding: 0 0 5% 5%;
+        position: relative;
+    }
+}
+
+.projectTitle h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 10px;
+    width: 70%;
+    background: rgba(0,0,0,0.3);
+}
+
+.carousel {
+    width: 70%;
+    padding: 8% 0 0 0;
+    background: $midAuburn;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.2);
+}
+
+.carouselContent {
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    background: $auburn;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    position: relative; // to overlay
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.overlay {
+    position: absolute; // to carouselContent
+    background: rgba(242, 234, 231, 0.2);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 20%;
+    }
+
+    p {
+        width: 70%;
+        margin: 1% auto 20%;
+        line-height: 1.5rem;
+    }
+}
+
+.usedSkills {
+    margin: 0 auto;
+    display: flex;
+
+        li {
+            margin: 5px;
+            font-size: 1.5rem;
+        }
+
+        svg {
+            width: 28px;
+        }
+}
+
+.overlay:hover,
+.overlay:focus {
+    background: rgba(242, 234, 231, 0.95);
+}
+
+.links {
+    width: 30%;
+    margin: 0 auto 10%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+
+    a {
+        transition: all 0.3s;
+    }
+
+    a:hover,
+    a:focus {
+        color: $midAuburn;
+    }
+}
+
+// flickity
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 500px; /* height of carousel */
+    margin-right: 10px;
+}
+
+.carousel-cell.is-selected {
+}
+
+
+// arrow
+.flickity-button {
+    background: transparent;
+}
+
+.flickity-button:hover,
+.flickity-button:focus {
+    background: transparent;
+}
+
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+
+.flickity-button-icon {
+    fill: $lightAuburn;
+    transition: all 0.5s;
+}
+
+.flickity-button-icon:hover,
+.flickity-button-icon:focus {
+    fill: $auburn;
+}
+
+.flickity-button:disabled {
+    display: none;
+}

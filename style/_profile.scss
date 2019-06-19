@@ -1,0 +1,60 @@
+// =========================================================== //
+//                           Profile                           //
+// =========================================================== //
+.profile {
+    background: $lightAuburn;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.profileTitle {
+    width: 30%;
+}
+
+.profileTitle h2 {
+    margin-bottom: 8%;
+    padding: 0 0 5% 5%;
+    position: relative;
+}
+
+.profileTitle h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 10px;
+    width: 70%;
+    background: rgba(0,0,0,0.3);
+}
+
+.profileTitle p {
+    padding: 0 10% 5% 10%;
+    line-height: 1.5rem;
+}
+
+.profileContent {
+    background: $midAuburn;
+    width: 70%;
+    min-height: 80vh;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.2), 0 -5px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    display: flex;
+}
+
+.profileInnerWrapper {
+    width: calc( 100% / 3);
+}
+
+.profileInnerWrapper:nth-of-type(1),
+.profileInnerWrapper:nth-of-type(2) {
+    border-right: 1px solid #2d2d2d;
+}
+
+.focusing,
+.growth,
+.sustainability {
+    padding: 5%;
+    line-height: 1.5rem;
+}

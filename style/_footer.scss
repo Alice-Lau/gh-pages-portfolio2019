@@ -1,0 +1,42 @@
+footer {
+    background-image: linear-gradient(to right top, #4d4d4d, #494949, #454545, #414141, #3d3d3d);
+    text-align: center;
+}
+
+.socialMediaNav ul {
+    width: 30%;
+    margin: 0 auto;
+    padding: 3% 0 1%;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        font-size: 1.5rem;
+        color: $lightAuburn;
+        transition: all 0.3s;
+    }
+
+    a:hover,
+    a:focus {
+        color: $midAuburn;
+    }
+}
+
+footer p {
+    color: $lightAuburn;
+}
+
+.copyrightCredits p {
+    padding: 3% 0 1%;
+}
+
+.copyrightCredits button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: $midAuburn;
+    transition: all 0.3s;
+
+    &:hover {
+        border: 1px solid $lightAuburn
+    }
+}
