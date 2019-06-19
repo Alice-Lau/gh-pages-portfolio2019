@@ -3,7 +3,7 @@
 @import 'skills';
 @import 'projects';
 @import 'footer';
-@import 'mediaQueries';
+
 // =========================================================== //
 //                           header                            //
 // =========================================================== //
@@ -33,6 +33,7 @@ h1 {
     background-image:
         linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(253, 253, 253, 0.9)),
         url('../assets/plasterBackground.jpg');
+    width: 100%;
     min-height: 100vh;
     box-shadow: 0 9px 0px 0px transparent, 0 -9px 0px 0px transparent, 12px 0 15px -4px rgba(0,0,0,0.3), -12px 0 15px -4px rgba(0,0,0,0.3);
     display: flex;
@@ -213,3 +214,6 @@ h1 {
         transform: translate(5px, -5px);
     }
 }
+
+// mediaQueries
+@import 'mediaQueries';

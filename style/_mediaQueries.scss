@@ -1,0 +1,54 @@
+@media (max-width: 1250px) {
+    .heroTxt {
+        width: 50%;
+    }
+}
+
+@media(max-width: 999px) {
+    .heroTxt {
+        width: 60%;
+    }
+}
+
+@media (max-width: 777px) {
+    .heroTxt {
+        width: 70%;
+    }
+}
+
+@media (max-width: 580px) {
+    .stickyNav {
+        width: 6%;
+    }
+
+}
+
+@media (max-width: 530px) {
+    .heroTxt {
+        
+        width: 100%;
+    }
+
+    .heroTxtInnerWrapper {
+        background-image: none;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(253, 253, 253, 0.4));
+    }
+}
+
+@media (max-width: 480px) {
+    .stickyNav {
+        width: 7%;
+    }
+}
+
+@media (max-width: 430px) {
+    .stickyNav {
+        width: 10%;
+    }
+}
+
+@media (max-width: 400px) {
+    .specialFont {
+        font-size: 9rem;
+    }
+}

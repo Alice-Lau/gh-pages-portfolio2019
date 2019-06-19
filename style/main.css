@@ -540,6 +540,7 @@ h1 {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(253, 253, 253, 0.9)), url("../assets/plasterBackground.jpg");
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(253, 253, 253, 0.9)), url("../assets/plasterBackground.jpg");
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(253, 253, 253, 0.9)), url("../assets/plasterBackground.jpg");
+  width: 100%;
   min-height: 100vh;
   -webkit-box-shadow: 0 9px 0px 0px transparent, 0 -9px 0px 0px transparent, 12px 0 15px -4px rgba(0, 0, 0, 0.3), -12px 0 15px -4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 9px 0px 0px transparent, 0 -9px 0px 0px transparent, 12px 0 15px -4px rgba(0, 0, 0, 0.3), -12px 0 15px -4px rgba(0, 0, 0, 0.3);
@@ -729,3 +730,41 @@ h1 {
     opacity: 0;
     -webkit-transform: translate(5px, -5px);
     transform: translate(5px, -5px); } }
+
+@media (max-width: 1250px) {
+  .heroTxt {
+    width: 50%; } }
+
+@media (max-width: 999px) {
+  .heroTxt {
+    width: 60%; } }
+
+@media (max-width: 777px) {
+  .heroTxt {
+    width: 70%; } }
+
+@media (max-width: 580px) {
+  .stickyNav {
+    width: 6%; } }
+
+@media (max-width: 530px) {
+  .heroTxt {
+    width: 100%; }
+  .heroTxtInnerWrapper {
+    background-image: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(253, 253, 253, 0.4)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(253, 253, 253, 0.4));
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(253, 253, 253, 0.4));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(253, 253, 253, 0.4)); } }
+
+@media (max-width: 480px) {
+  .stickyNav {
+    width: 7%; } }
+
+@media (max-width: 430px) {
+  .stickyNav {
+    width: 10%; } }
+
+@media (max-width: 400px) {
+  .specialFont {
+    font-size: 9rem; } }
