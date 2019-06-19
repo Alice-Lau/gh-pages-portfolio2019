@@ -18,6 +18,14 @@
     .skillsDisplay {
         width: 75%;
     }
+
+    .projectTitle {
+        width: 25%;
+    }
+
+    .carousel {
+        width: 75%;
+    }
 }
 
 @media(max-width: 999px) {
@@ -80,6 +88,30 @@
         width: 100%;
         min-height: 90vh;
     }
+
+    .project {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .projectTitle {
+        width: 100%;
+
+        h2 {
+            margin-bottom: 3%;
+            padding: 3% 0 2% 5%;
+        }
+
+        h2::after {
+            left: 49px;
+            width: 25%;
+        }
+    }
+
+    .carousel {
+        padding: 5% 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 888px) {
@@ -118,6 +150,17 @@
         border-right: none;
         border-bottom: 1px solid #2d2d2d;
     }
+
+    .socialMediaNav ul {
+        width: 40%;
+    }
+}
+
+@media (max-width: 690px) {
+    .carouselContent {
+        width: 55%;
+        height: 530px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -126,9 +169,27 @@
     }
 }
 
+@media (max-width: 600px) {
+    .carouselContent {
+        width: 70%;
+    }
+}
+
 @media (max-width: 580px) {
     .stickyNav {
         width: 6%;
+    }
+
+    .flickity-prev-next-button.next {
+        right: -30px;
+    }
+
+    .flickity-prev-next-button.previous {
+        left: -3px;
+    }
+
+    .flickity-prev-next-button .flickity-button-icon {
+        width: 30%;
     }
 
     .profileContent {
@@ -147,6 +208,10 @@
         width: 100%;
     }
 
+    .carousel {
+        padding: 10% 0;
+    }
+
     .heroTxtInnerWrapper {
         background-image: none;
         background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(253, 253, 253, 0.4));
@@ -157,11 +222,19 @@
     .skillsDisplay {
         min-height: 75vh;
     }
+
+    .socialMediaNav ul {
+        width: 60%;
+    }
 }
 
 @media (max-width: 480px) {
     .stickyNav {
         width: 7%;
+    }
+
+    .carouselContent {
+        width: 80%;
     }
 }
 
@@ -177,10 +250,36 @@
     .skillsDisplay {
         min-height: 70vh;
     }
+
+    .carouselContent {
+        width: 100%;
+    }
+
+    .flickity-prev-next-button.next {
+        right: -51px;
+    }
+
+    .flickity-prev-next-button.previous {
+        left: -22px;
+    }
+
+    .flickity-button-icon {
+        fill: #2d2d2d;
+        transition: all 0.5s;
+    }
+
+    .flickity-button-icon:hover,
+    .flickity-button-icon:focus {
+        fill: $auburn;
+    }
 }
 
 @media (max-width: 400px) {
     .specialFont {
         font-size: 9rem;
+    }
+
+    .socialMediaNav ul {
+        width: 70%;
     }
 }
